@@ -95,7 +95,7 @@ public class TCPClient extends JFrame
                         throw new RuntimeException(x);
                     }
                     // 发送账户信息
-                    writer.writeBytes(account+'\n');
+                    writer.writeBytes("HELO "+account+'\n');
 
                     // 读取服务器响应状态
 
@@ -107,11 +107,14 @@ public class TCPClient extends JFrame
                     reader.close();
                     clientSocket.close();
 
-                    if(Objects.equals(status, "500"))
+                    if(Objects.equals(status, "500 AUTH REQUIRED"))
                     {
                         panel1.setVisible(false);
                         panel2.setVisible(true);
                     }
+                    else
+                        JOptionPane.showMessageDialog(null,"您输入的账号不合法！","登录失败",JOptionPane.ERROR_MESSAGE);
+
                 } catch (IOException ex) {
                     // 捕获并处理异常
                     ex.printStackTrace();
@@ -135,7 +138,7 @@ public class TCPClient extends JFrame
                         throw new RuntimeException(x);
                     }
                     // 发送账户信息
-                    writer.writeBytes(password+'\n');
+                    writer.writeBytes("PASS "+password+'\n');
 
                     // 读取服务器响应状态
 
@@ -147,11 +150,13 @@ public class TCPClient extends JFrame
                     reader.close();
                     clientSocket.close();
 
-                    if(Objects.equals(status, "500"))
+                    if(Objects.equals(status, "525 OK!"))
                     {
                         panel2.setVisible(false);
                         panel3.setVisible(true);
                     }
+                    else
+                        JOptionPane.showMessageDialog(null,"您输入的密码不正确！","登录失败",JOptionPane.ERROR_MESSAGE);
                 } catch (IOException ex) {
                     // 捕获并处理异常
                     ex.printStackTrace();
@@ -181,7 +186,7 @@ public class TCPClient extends JFrame
                     String balance = reader.readLine();
                     System.out.println(balance);
                     setTitle("余额查询");
-                    label_of_check.setText(balance+"元");
+                    label_of_check.setText(balance);
 
                     writer.close();
                     reader.close();
@@ -246,7 +251,7 @@ public class TCPClient extends JFrame
                         throw new RuntimeException(x);
                     }
                     // 发送账户信息
-                    writer.writeBytes(balance+'\n');
+                    writer.writeBytes("WDRA "+balance+'\n');
 
                     // 读取服务器响应状态
 
@@ -258,7 +263,7 @@ public class TCPClient extends JFrame
                     reader.close();
                     clientSocket.close();
 
-                    if(Objects.equals(status, "500"))
+                    if(Objects.equals(status, "525 OK"))
                         JOptionPane.showMessageDialog(null,"您已成功取款"+balance+"元","取款成功",JOptionPane.INFORMATION_MESSAGE);
                     else
                         JOptionPane.showMessageDialog(null,"您的余额不足！","取款失败",JOptionPane.ERROR_MESSAGE);

@@ -21,7 +21,7 @@ class TCPServer {
             clientSentence = inFromClient.readLine();
             System.out.println(clientSentence);
 
-            capitalizedSentence = "500\n";
+            capitalizedSentence = "500 AUTH REQUIRED\n";
 
             DataOutputStream  outToClient = new DataOutputStream(connectionSocket.getOutputStream());
 
