@@ -1,0 +1,9 @@
+Log created at: 2024-04-09 19:36:34
+2024-04-09 19:36:34 - HELO 202205252022721
+2024-04-09 19:36:35 User:nullthe password is incorrect.
+2024-04-09 19:36:35 - PASS 123456
+2024-04-09 19:36:35 - BALA
+2024-04-09 19:36:35 User:nulldoes not have sufficient balance.
+2024-04-09 19:36:35 - WDRA 100
+2024-04-09 19:36:35 User:nulldoes not have sufficient balance.
+2024-04-09 19:36:35 - WDRA 1000000

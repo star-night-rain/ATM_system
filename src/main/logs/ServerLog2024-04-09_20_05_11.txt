@@ -1,0 +1,10 @@
+Log created at: 2024-04-09 20:05:11
+2024-04-09 20:05:12 User:nullthe usrId does not exist in the database.
+2024-04-09 20:05:12 - HELO 202205252022721
+2024-04-09 20:05:12 User:nullthe password is incorrect.
+2024-04-09 20:05:12 - PASS 123456
+2024-04-09 20:05:12 - BALA
+2024-04-09 20:05:12 User:nulldoes not have sufficient balance.
+2024-04-09 20:05:12 - WDRA 100
+2024-04-09 20:05:12 User:nulldoes not have sufficient balance.
+2024-04-09 20:05:12 - WDRA 1000000

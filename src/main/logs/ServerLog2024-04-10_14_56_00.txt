@@ -1,0 +1,2 @@
+2024-04-10 14:56:00 the massage from Client is HELO 202205252022721
+2024-04-10 14:56:00 User:202205252022721 the usrId exists in the database.

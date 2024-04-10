@@ -1,0 +1,8 @@
+2024-04-09 20:27:13 the massage from Client is HELO 202205252022721
+2024-04-09 20:27:13 the massage from Client is PASS 123456
+2024-04-09 20:27:13 the massage from Client is BALA
+2024-04-09 20:27:13 the massage from Client is WDRA 100
+2024-04-09 20:27:13 User:202205252022721 withdrew 100.0 dollars.
+2024-04-09 20:27:13 the massage from Client is WDRA 1000000
+2024-04-09 20:27:13 User:202205252022721 does not have sufficient balance.
+2024-04-09 20:27:13 the massage from Client is BYE

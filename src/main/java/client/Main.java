@@ -1,4 +1,4 @@
-package org.example;
+package client;
 
 public class Main
 {

@@ -1,0 +1,10 @@
+2024-04-10 15:08:03 the massage from Client is HELO 202205252022721
+2024-04-10 15:08:03 User:202205252022721 the usrId exists in the database.
+2024-04-10 15:08:07 the massage from Client is PASS 123456
+2024-04-10 15:08:07 User:202205252022721 the password is correct.
+2024-04-10 15:08:08 the massage from Client is BALA
+2024-04-10 15:08:08 User:202205252022721 get balance.
+2024-04-10 15:08:14 the massage from Client is WDRA 28376
+2024-04-10 15:08:14 User:202205252022721 withdrew 28376.0 dollars.
+2024-04-10 15:08:20 the massage from Client is BALA
+2024-04-10 15:08:20 User:202205252022721 get balance.
