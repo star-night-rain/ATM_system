@@ -88,7 +88,7 @@ public class TCPClient extends JFrame
                 try
                 {
                     account = text_of_account.getText();
-                    System.out.println(account);
+                    System.out.println("account: "+account);
 
 
                     // 发送账户信息
@@ -128,7 +128,7 @@ public class TCPClient extends JFrame
                 try
                 {
                     password = text_of_password.getText();
-                    System.out.println(password);
+                    System.out.println("password: " + password );
 //                    try
 //                    {
 //                        clientSocket = new Socket(ip, port);
@@ -188,7 +188,7 @@ public class TCPClient extends JFrame
                     // 读取服务器响应状态
 
                     String balance = reader.readLine();
-                    System.out.println(balance);
+                    System.out.println("balance: "+balance);
                     setTitle("余额查询");
                     label_of_check.setText(balance);
 
@@ -268,7 +268,7 @@ public class TCPClient extends JFrame
                 try
                 {
                     balance = text_of_balance.getText();
-                    System.out.println(balance);
+                    System.out.println("balance: "+balance);
 //                    try
 //                    {
 //                        clientSocket = new Socket(ip, port);
@@ -291,7 +291,7 @@ public class TCPClient extends JFrame
 //                    reader.close();
 //                    clientSocket.close();
 
-                    if (Objects.equals(status, "525 OK"))
+                    if (Objects.equals(status, "525 OK!"))
                         JOptionPane.showMessageDialog(null, "您已成功取款" + balance + "元", "取款成功", JOptionPane.INFORMATION_MESSAGE);
                     else
                         JOptionPane.showMessageDialog(null, "您的余额不足！", "取款失败", JOptionPane.ERROR_MESSAGE);
